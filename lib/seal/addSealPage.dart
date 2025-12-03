@@ -279,7 +279,8 @@ class addsealdetailPageState extends State<addsealdetailPage> {
 
       // 🔹 Attach images
       if (_cameraImage != null) {
-        request.files.add(
+
+      request.files.add(
           await http.MultipartFile.fromPath('pics[]', _cameraImage!.path),
         );
       }

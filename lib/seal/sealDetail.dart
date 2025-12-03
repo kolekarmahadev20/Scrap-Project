@@ -483,6 +483,7 @@ class ImagePreviewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Images"),
+
       ),
       body: GridView.builder(
         padding: EdgeInsets.all(10),
