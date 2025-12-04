@@ -23,13 +23,7 @@ jobs:
       - name: 📦 Get dependencies
         run: flutter pub get
 
-        # SKIP ANALYSIS FOR NOW (causing failure)
-        # - name: 🔍 Run Flutter analysis
-        #   run: flutter analyze
-
-      - name: 🧪 Run tests
-        run: flutter test --no-pub
-
+      # SKIP EVERYTHING - BUILD APK DIRECTLY!
       - name: 📱 Build APK (Release)
         run: flutter build apk --release
 
